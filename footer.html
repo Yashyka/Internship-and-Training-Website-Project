@@ -1,0 +1,337 @@
+<style>
+    .footer {
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      display: flex;
+      padding: 12px 20px;
+    }
+    
+    @media (max-width: 991px) {
+      .footer {
+        padding: 0 20px;
+      }
+    }
+    
+    .footer-content {
+      background-color: #000;
+      width: 100%;
+      max-width: 1152px;
+      padding: 20px 0 20px;
+    }
+    
+    @media (max-width: 991px) {
+      .footer-content {
+        max-width: 100%;
+      }
+    }
+    
+    .footer-columns {
+      gap: 30px;
+      display: flex;
+    }
+    
+    @media (max-width: 991px) {
+      .footer-columns {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+    
+    .services-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 35%;
+      margin-left: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .services-column {
+        width: 100%;
+      }
+    }
+    
+    .services-content {
+      display: flex;
+      flex-grow: 1;
+      gap: 20px;
+      color: #fff;
+      justify-content: space-between;
+    }
+    
+    @media (max-width: 991px) {
+      .services-content {
+        margin-top: 40px;
+      }
+    }
+    
+    .services-list {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    
+    .services-title {
+        font: 500 20px Poppins, sans-serif;
+    }
+    
+    .services-items {
+      margin-top: 20px;
+      margin-left: 0;
+      font: 500 11px Poppins, sans-serif;
+    }
+    .list-item {
+        list-style-type: none; 
+        padding: 0; 
+        margin-left: 0;
+    }
+    
+    .social-title {
+      font-family: Poppins, sans-serif;
+      margin-top: 31px;
+    }
+    
+    .social-icons {
+      aspect-ratio: 5.88;
+      object-fit: auto;
+      object-position: center;
+      width: 192px;
+      align-self: center;
+      margin-top: 26px;
+    }
+    
+    .company-info {
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      white-space: nowrap;
+      width:40%
+    }
+    
+    @media (max-width: 991px) {
+      .company-info {
+        white-space: initial;
+      }
+    }
+    
+    .company-title {
+        font: 500 20px Poppins, sans-serif;
+    }
+    
+    .company-links {
+      margin-top: 20px;
+      font: 500 11px Inter, sans-serif;
+
+    }
+    
+    .contact-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 60%;
+      margin-left: 30px;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-column {
+        width: 100%;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .contact-content {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    
+    .contact-info {
+      gap: 20px;
+      display: flex;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+    
+    .address-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 50%;
+      margin-left: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .address-column {
+        width: 100%;
+      }
+    }
+    
+    .address-content {
+      display: flex;
+      flex-direction: column;
+      font-size: 11px;
+      color: #fff;
+      font-weight: 500;
+    }
+    
+    @media (max-width: 991px) {
+      .address-content {
+        margin-top: 40px;
+      }
+    }
+    
+    .contact-title {
+      font: 500 20px Poppins, sans-serif;
+    }
+    
+    .address-details {
+      font-family: Inter, sans-serif;
+      margin-top: 25px;
+    }
+    
+    .email-info {
+      font-family: Poppins, sans-serif;
+      margin-top: 20px;
+      
+    }
+    .anchor{
+    color: #ffffff;
+    text-decoration: none;
+    }
+    
+    .map-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 50%;
+      margin-left: 20px;
+    }
+    
+    @media (max-width: 991px) {
+      .map-column {
+        width: 100%;
+      }
+    }
+    
+    .map-content {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      font-size: 22px;
+      color: #fff;
+      font-weight: 800;
+    }
+    
+    @media (max-width: 991px) {
+      .map-content {
+        margin-top: 40px;
+      }
+    }
+    
+    .map-title {
+      font-family: Poppins, sans-serif;
+      align-self: start;
+      margin-left: 15px;
+    }
+    
+    @media (max-width: 991px) {
+      .map-title {
+        margin-left: 10px;
+      }
+    }
+    
+    .map-image {
+      aspect-ratio: 1.56;
+      object-fit: auto;
+      object-position: center;
+      width: 100%;
+      margin-top: 9px;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-columns">
+          <div class="services-column">
+            <div class="services-content">
+              <div class="services-list">
+                <p class="services-title">OUR SERVICES</p>
+                <nav class="services-items">
+                  <ul>
+                    <li class="list-item">Game Development</li>
+                    <li class="list-item">Generatives AI</li>
+                    <li class="list-item">3D Modeling/Rendering</li>
+                    <li class="list-item">2D/3D Animation</li>
+                    <li class="list-item">Motion Graphics</li>
+                    <li class="list-item">VFX AR/VR/MR/XR</li>
+                    <li class="list-item">Virtual Production</li>
+                    <li class="list-item">CG</li>
+                    <li class="list-item">UI/UX</li>
+                    <li class="list-item">Academic Alliances</li>
+                    <li class="list-item">Video Editing</li>
+                  </ul>
+                </nav>
+                <h3 class="social-title">FOLLOW US ON</h3>
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/787a46ddd0595641cac73f4634313fd1e59874a588ff1077e9671e744f53293e?apiKey=fd5eda113e544dd1a27926b07eb423da&" class="social-icons" alt="Social media icons" />
+              </div>
+              <div class="company-info">
+                <h2 class="company-title">COMPANY</h2>
+                <nav class="company-links">
+                  <ul>
+                    <li class="list-item"><a href="home.html" class = "anchor">Home</a></li>
+                    <li class="list-item"><a href="#about.html" class = "anchor">About</a></li>
+                    <li class="list-item"><a href="#internship.html" class = "anchor">Internship</a></li>
+                    <li class="list-item"><a href="#training.html" class = "anchor">Training</a></li>
+                    <li class="list-item"><a href="#blog.html" class = "anchor">Blog</a></li>
+                    <li class="list-item"><a href="#contact.html" class = "anchor">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="contact-column">
+            <div class="contact-content">
+              <div class="contact-info">
+                <div class="address-column">
+                  <div class="address-content">
+                    <h2 class="contact-title">GET IN TOUCH</h2>
+                    <address class="address-details">
+                      Our Address:<br />
+                      INDUSTRIAL DESIGN & ANIMATIONS Karunaa Conclave, No.1963, J Block, 3rd Street, 5th Main Road, Anna Nagar West, Anna Nagar, Chennai, Tamil Nadu - 600040, INDIA
+                    </address>
+                    <p class="email-info">E mail: <a href="mailto:info@idacreations.com" class = "anchor">info@idacreations.com</a></p>
+                  </div>
+                </div>
+                <div class="map-column">
+                  <div class="map-content">
+                    <P class="map-title">LOCATE US ON MAP</P>
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e9f90e6ab1bccd01369ce0878a803e100f82a0a21502f6e29d13966631d3fa4?apiKey=fd5eda113e544dd1a27926b07eb423da&" class="map-image" alt="Map showing our location" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
