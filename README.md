@@ -31,4 +31,5 @@ The website provides an intuitive and user-friendly interface that highlights in
 ```
 
 
-Open `home.html` in your browser to view the website
+Open `home.html` in your browser to view the website.
+
